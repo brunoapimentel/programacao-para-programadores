@@ -1,68 +1,58 @@
-#venda de sabão em pó em multinivel, a cada venda a pessoa superior ganha 5% em cima 
-# do valor total da pessoa subordinada. 
+#venda de sabão em pó em multinivel, a cada venda a pessoa superior ganha 5% em cima
+# do valor total da pessoa subordinada.
+ganho = 1.05
+salarioBruno = []
 
 
-boss = {
-    "nome": "Bruno",
-    "salario": ""}
+equipes = [
+{
+   "nome": "Ana",
+   "vendas": 300,
+   "subordinados": [
+       {
+           "nome": "Bia",
+           "vendas": 100,},
+       {
+           "nome": "Camila",
+           "vendas": 350,
+       }
+   ]
+},
+{
+       "nome": "Di",
+       "vendas": 450,
+       "subordinados":
+           {
+               "nome": "Maga",
+               "vendas": 200,
+           }
+   },
+{
+       "nome": "Nico",
+       "vendas": 500,
+       "subordinados": [
+           {
+               "nome": "Lucas",
+               "vendas": 150,
+               },
+           {
+               "nome": "Vini",
+               "vendas": 100,
+           }
+       ]
+   }
+   ]
 
-equipe1= {
-    "nome": "Ana",
-    "vendas": 300,
-    "subordinados": [
-        {
-            "nome": "Bia",
-            "vendas": 100,},
-        {
-            "nome": "Camila",
-            "vendas": 350,            
-        }
-    ]
-}
-        
-equipe2 = {
-        "nome": "Di",
-        "vendas": 450,
-        "subordinados":
-            {
-                "nome": "Maga",
-                "vendas": 200,            
-            }
-    }
+valor = (equipes[0]['subordinados'][0]['vendas'])
+print(valor)
 
-equipe3 = {
-        "nome": "Nico",
-        "vendas": 500,
-        "subordinados": [
-            {
-                "nome": "Lucas",
-                "vendas": 150,            
-                },
-            {
-                "nome": "Vini",
-                "vendas": 100,            
-            }
-        ]
-    }
+valor1 = (equipes[0]['vendas']) * 1.05
+valor2 = (equipes[1]['vendas']) * 1.05
+valor3 = (equipes[2]['vendas']) * 1.05
 
-ganho = 0.05
-
-soma1 = equipe1.get('vendas') * ganho
-print(soma1)
-
-
-
-  
-
-for i in equipe1:
-    print(i, ":", equipe1[i])
-    
-
-for i in equipe2:
-    print(i, ":", equipe2[i])
+print(valor1, valor2, valor3)
 
 
-for i in equipe3:
-    print(i, ":", equipe3[i])
-
-
+for i in equipes:
+    for v in i.values():
+        print(v)
