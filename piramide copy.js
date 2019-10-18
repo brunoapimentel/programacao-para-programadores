@@ -66,6 +66,3 @@ console.log(`O Nico recebeu comissão de R$ ${nico.toFixed(2)} e faturou no tota
 
 console.log(`O Bruno não vendeu nada e recebeu R$ ${bruno.toFixed(2)}`)
 
-for(i=0; i < piramide.vendedoresSecundarios.length; i++){
-    console.log(i)
-}
