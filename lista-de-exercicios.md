@@ -5,11 +5,11 @@ Crie um programa que receba o total de vendas abaixo. O Bruno ganhará 5% do tot
 
 
  **Ex:**
- `                                     BRUNO`
+ `|                           |            BRUNO             |                           |`
 
- `       ANA R$ 300                DIANDRA R$ 450              NICO R$ 500`
+ `|       ANA R$ 300          |         DIANDRA R$ 450       |       NICO R$ 500`
 
-`BIA R$ 100 CAMILA R$ 350  |  MAGA R$ 200  FABIO R$ 210  |  LUCAS R$ 150 VINI R$ 100`
+ `| BIA R$ 100 CAMILA R$ 350  |  MAGA R$ 200  FABIO R$ 210   |  LUCAS R$ 150 VINI R$ 100 |`
 
 ---
 
