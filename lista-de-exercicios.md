@@ -37,6 +37,12 @@ João e Maria fizeram uma prova na escola. Crie um algorítmo que corrija a prov
 `4 - B`       `2 - D`       `1 - A | Vale 1 ponto` 
 `5 - D`       `2 - D`       `1 - A | Vale 3 pontos` 
 
+
+
+JOÃO | MARIA | GABARITO
+--- | --- | ---
+*1 - C* | *1 - C* | *1 - A*
+1 | 2 | 3
 ---
 
 ###EXERCÍCIO 05
