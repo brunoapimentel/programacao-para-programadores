@@ -51,3 +51,56 @@ Crie um algorítmo de bubble sort no vetor desordenado abaixo:
 `numeros = [2, 90, 43, 21, 5, 10]`
 
 ---
+
+### EXERCICIO 06
+
+**Capricho - Quiz Vocacional**
+
+- Coach
+- Startupeiro
+- Gourmetizador
+- Blogueirinho
+
+
+1- Na sua carreira, você prefere:
+
+
+| Alternativa   | Peso Coach | Peso Startupeiro  | Peso Gourmet | Peso Blogueirinho  |
+|    :----:   |    :----:   |    :----:   |    :----:   |    :----:   |
+| Ajudar as pessoas chegarem nos seus objetivos      | 3  | 1  | 0  | 1  |
+| Resolver problemas que ninguém resolve    |  0  | 3  | 3  | 0  |
+| Ser positivo todos os dias   |  3  | 1  | 1  | 2 |
+| Ser reconhecido por todos   |  0  | 2  | 2  | 3 |
+
+<br>
+2- No seu dia a dia, como você age com as pessoas:
+
+
+| Alternativa   | Peso Coach | Peso Startupeiro  | Peso Gourmet | Peso Blogueirinho  |
+|    :----:   |    :----:   |    :----:   |    :----:   |    :----:   |
+| Você aconselha todo mundo      | 3  | 0  | 0  | 2  |
+| Você é um bom ouvinte    |  0  | 1  | 3  | 1  |
+| Você toma iniciativa   |  1  | 3  | 2  | 1 |
+| Você analisas todas as opções     |  0  | 1  | 3  | 1 |
+
+<br>
+3- Se você fosse um animal, você seria:
+
+
+| Alternativa   | Peso Coach | Peso Startupeiro  | Peso Gourmet | Peso Blogueirinho  |
+|    :----:   |    :----:   |    :----:   |    :----:   |    :----:   |
+| Um papagaio      | 3  | 2  | 0  | 2  |
+| Um leão      |  0  | 3  | 2  | 2 |
+| Uma formiga     |  1  | 2  | 1  | 3 |
+| Um flamingo     |  1  | 1  | 3  | 1 |
+
+<br>
+
+**Respostas realizadas:**
+
+> Eric [b, d, d] -  Gourmetizador
+
+> Roger [a, b, a] -   Coach
+
+> Nicao [b, c, c] -   Blogueirinho/Startupeiro (empate)
+
