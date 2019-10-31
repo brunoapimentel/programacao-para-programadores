@@ -155,17 +155,46 @@ people = [
      }
 ]
 
-teste = (quizz[0]['alternatives'][0]['weights'])
-print(teste.values())
+# teste = quizz[0]['alternatives'][0]['weights']
+# print(teste.values())
 
-#resolução
+#resolução di
+
+# for person in people:
+#     for answer in person['answers']:
+#         print(f'O {person["name"]} respondeu {answer}')
+
+# for question in quizz:
+#     soma = 0
+#     for alternative in question['alternatives']:
+#         for choosen in alternative['weights'].values():
+#             print(choosen)
+
+# resolução
 
 for person in people:
-    for answer in person['answers']:
-        print(f'O {person["name"]} respondeu {answer}')
+    accumulated_weights = {"coach": 0, "startupeiro": 0, "gourmet": 0, "blogueiro": 0}
 
-for question in quizz:
-    soma = 0
-    for alternative in question['alternatives']:
-        for choosen in alternative['weights'].values():
-            print(choosen)
+    for current_question in range(len(quizz)):
+        question = quizz[current_question]
+        answer = person['answers'][current_question]
+        selected_weights = None
+
+        for alternative in question['alternatives']:
+            if alternative['option'] == answer:
+                selected_weights = alternative['weights']
+        
+        for profession in selected_weights:
+            accumulated_weights[profession] += selected_weights[profession]
+    
+    highest_weight = 0
+    selected_profession = None
+    
+    for profession in accumulated_weights:
+        weight = accumulated_weights[profession]
+        if weight > highest_weight:
+            highest_weight = weight
+            selected_profession = profession
+    
+    print(f'O {person["name"]} é um {selected_profession}')    
+    print(accumulated_weights)
