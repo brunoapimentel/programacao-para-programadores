@@ -1,3 +1,4 @@
+from ex7_functions import calculate_weights, get_selected_profession
 # Exercicio quiz Capricho
 
 quizz = [
@@ -173,28 +174,8 @@ people = [
 # resolução
 
 for person in people:
-    accumulated_weights = {"coach": 0, "startupeiro": 0, "gourmet": 0, "blogueiro": 0}
-
-    for current_question in range(len(quizz)):
-        question = quizz[current_question]
-        answer = person['answers'][current_question]
-        selected_weights = None
-
-        for alternative in question['alternatives']:
-            if alternative['option'] == answer:
-                selected_weights = alternative['weights']
-        
-        for profession in selected_weights:
-            accumulated_weights[profession] += selected_weights[profession]
-    
-    highest_weight = 0
-    selected_profession = None
-    
-    for profession in accumulated_weights:
-        weight = accumulated_weights[profession]
-        if weight > highest_weight:
-            highest_weight = weight
-            selected_profession = profession
+    accumulated_weights = calculate_weights(person['answers'], quizz)
+    selected_profession = get_selected_profession(accumulated_weights)
     
     print(f'O {person["name"]} é um {selected_profession}')    
     print(accumulated_weights)
