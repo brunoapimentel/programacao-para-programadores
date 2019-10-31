@@ -104,3 +104,12 @@ Crie um algorítmo de bubble sort no vetor desordenado abaixo:
 
 > Nicao [b, c, c] -   Blogueirinho/Startupeiro (empate)
 
+---
+
+### EXERCICIO 07
+a) Refatore o exercício da pirâmide de forma que seja feito através de uma função.
+<br>
+b) Como continuação do exercício do quizz, busque transformar o resultado obtido em porcentagem. Por exemplo: João é 58% gourmet.
+
+---
+
