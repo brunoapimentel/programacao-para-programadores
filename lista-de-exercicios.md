@@ -113,3 +113,17 @@ b) Como continuação do exercício do quizz, busque transformar o resultado obt
 
 ---
 
+### EXERCICIO 08
+Criar uma agenda telefônica, com um CRUD básico feito com python puro.
+
+Exemplo:
+
+```
+python3 agenda.py add "Roger Groger" "Xaomi" "(11) 9123123-1231232"
+python3 agenda.py list "Rog"
+add [nome] [identificador] [numero]
+edit [busca] [identificador] [numero]
+list
+list [busca]
+delete [busca]
+```
