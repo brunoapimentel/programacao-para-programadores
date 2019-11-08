@@ -1,4 +1,4 @@
-from ex7_functions import calculate_weights, get_selected_profession
+from ex7_functions import calculate_weights, get_selected_profession, get_percentual
 # Exercicio quiz Capricho
 
 quizz = [
@@ -153,6 +153,9 @@ people = [
 
     {   "name": "Nico",
         "answers": ['b', 'c', 'c']
+     },
+    {   "name": "Bruno",
+        "answers": ['a', 'a', 'c']
      }
 ]
 
@@ -176,6 +179,8 @@ people = [
 for person in people:
     accumulated_weights = calculate_weights(person['answers'], quizz)
     selected_profession = get_selected_profession(accumulated_weights)
-    
-    print(f'O {person["name"]} é um {selected_profession}')    
-    print(accumulated_weights)
+    scores = get_percentual(accumulated_weights)
+   
+    print(f'O {person["name"]} é {scores[selected_profession]}% {selected_profession}!')    
+    #print(accumulated_weights)
+    #print(scores)

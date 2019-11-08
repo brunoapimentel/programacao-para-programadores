@@ -28,3 +28,12 @@ def get_selected_profession(weights):
             selected_profession = profession
     
     return selected_profession
+
+def get_percentual(accumulated_weights):
+    scores = {"coach": 0, "startupeiro": 0, "gourmet": 0, "blogueiro": 0}
+    total = sum(accumulated_weights.values())
+    for profession in accumulated_weights:
+        score = accumulated_weights[profession]
+        percent = round(score * 100 / total)
+        scores[profession] = percent
+    return scores        
