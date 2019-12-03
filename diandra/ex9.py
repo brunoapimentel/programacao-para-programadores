@@ -37,12 +37,12 @@ print(valor)
 media = 6
 
 for aluno in alunos:
-    aluno_media = 0 
+    soma_nota = 0 
     for nota in aluno['notas']:
-        aluno_media += nota
+        soma_nota += nota
 
     
-    aluno_media = aluno_media / int(nota)
+    aluno_media = soma_nota / len(aluno['notas'])
     
     if aluno_media >= media:
         print(f'o aluno {aluno["nome"]} foi aprovado com a média de {aluno_media}')
